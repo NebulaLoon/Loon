@@ -9,4 +9,5 @@ hostname = api.coolapk.com
 
 [Script]
 http-response ^https?:\/\/api.coolapk.com\/v6\/(feed\/(replyList|detail)|main\/indexV8|dataList) script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/coolapk.js, requires-body=true, timeout=10, tag=酷安
-#http-response https:\/\/api\.coolapk\.com\/v6\/feed\/detail.* script-path=https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/KA.js, requires-body=true, timeout=10, tag=酷安好物推荐
+#http-response 
+#https:\/\/api\.coolapk\.com\/v6\/feed\/detail.* script-path=https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/KA.js, requires-body=true, timeout=10, tag=酷安好物推荐
