@@ -5,16 +5,17 @@
 #!icon=
 
 [Rewrite]
+# 酷安去广告
 ^https:\/\/api\.coolapk\.com\/v6\/search\?.+type=hotSearch reject-dict
 
 [Script]
 http-response ^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Wechat.js, requires-body=true, timeout=60, tag= 微信 去除公众号文章底部广告
 
-http-response ^https?:\/\/appwk\.baidu\.com\/naapi\/user\/getinfo script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/baidu/baiduLib.js, requires-body=true, timeout=60, tag=百度文库
+http-response ^https?:\/\/appwk\.baidu\.com\/naapi\/user\/getinfo script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/baidu/baiduLib.js, requires-body=true, timeout=60, tag=百度文库 VIP
 
-# http-response ^https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/BaiduCloud.js, requires-body=true, timeout=60, tag= 百度网盘 解锁在线视频倍率/清晰度
+# http-response ^https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/BaiduCloud.js, requires-body=true, timeout=60, tag= 百度网盘 VIP
 
-http-response ^https?:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/baidu/baiduCloud.js, requires-body=true, timeout=60, tag= 百度网盘 解锁在线视频倍率/清晰度
+http-response ^https?:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/baidu/baiduCloud.js, requires-body=true, timeout=60, tag= 百度网盘 VIP
 
 http-response ^https:\/\/api\.coolapk\.com\/v6\/feed\/(detail|replyList)\? script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/coolapk.js, requires-body=true, timeout=10, tag=酷安去广告
 http-response ^https:\/\/api\.coolapk\.com\/v6\/main\/(dataList|indexV8)\? script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/coolapk.js, requires-body=true, timeout=10, tag=酷安去广告
